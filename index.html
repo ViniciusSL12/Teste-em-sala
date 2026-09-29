@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um guia direto pelos assuntos que estão moldando o universo da tecnologia.">
+    <meta name="theme-color" content="#f4f5ef">
+    <title>TechBlog — tecnologia para entender o agora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="TechBlog, início">
+            <span class="brand-mark" aria-hidden="true">T</span>
+            <span>tech<span class="brand-light">blog</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a href="#inteligencia-artificial">Inteligência artificial</a>
+            <a href="#desenvolvimento-web">Desenvolvimento web</a>
+            <a href="#programacao">Programação</a>
+        </nav>
+        <a class="header-link" href="#conteudo">Explorar temas <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Ideias, ferramentas e futuro</p>
+                <h1 id="hero-title">Tecnologia para entender <span>o agora.</span></h1>
+                <p class="hero-description">Um ponto de partida para explorar as ferramentas e tendências que estão mudando a forma como vivemos e criamos.</p>
+                <a class="hero-cta" href="#inteligencia-artificial">Comece a explorar <span aria-hidden="true">↓</span></a>
+                <p class="hero-note">3 temas essenciais <span aria-hidden="true">·</span> leitura rápida</p>
+            </div>
+            <figure class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85" alt="Detalhe de uma placa eletrônica com circuitos e componentes" fetchpriority="high">
+                <figcaption><span class="visual-index">01 / 03</span><span>O futuro é feito de conexões.</span></figcaption>
+                <span class="visual-stamp" aria-hidden="true">TECH<br>NOW</span>
+            </figure>
+            <div class="hero-bottom" aria-hidden="true"><span>Conhecimento em movimento</span><span>↓ role para descobrir</span></div>
+        </section>
+
+        <section class="topics" aria-labelledby="topics-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Seu mapa de tecnologia</p>
+                    <h2 id="topics-title">Por onde começar<span>?</span></h2>
+                </div>
+                <p>Três áreas, infinitas possibilidades.<br>Escolha um tema e mergulhe.</p>
+            </div>
+
+            <div class="topic-tools" data-topic-tools hidden>
+                <label class="search-field" for="topic-search">
+                    <span class="search-icon" aria-hidden="true">⌕</span>
+                    <input id="topic-search" type="search" placeholder="Buscar tema, linguagem ou ferramenta" autocomplete="off" aria-controls="topic-grid">
+                </label>
+                <div class="reading-progress" data-reading-progress hidden>
+                    <div class="progress-copy">
+                        <span data-progress-label>0 de 3 temas lidos</span>
+                        <span data-progress-percent>0%</span>
+                    </div>
+                    <progress id="topic-progress" max="3" value="0" aria-label="Progresso de leitura"></progress>
+                </div>
+            </div>
+
+            <div class="topic-grid" id="topic-grid">
+                <article class="topic-card topic-card--lime" id="inteligencia-artificial">
+                    <div class="card-topline"><span class="card-number">01</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                    <p class="card-category">Inteligência artificial</p>
+                    <h3>Máquinas que aprendem. Ideias que avançam.</h3>
+                    <p class="card-description">A inteligência artificial está transformando diversas áreas da tecnologia.</p>
+                    <h4>Onde ela aparece</h4>
+                    <ul>
+                        <li>Chatbots</li>
+                        <li>Reconhecimento de imagens</li>
+                        <li>Automação de tarefas</li>
+                    </ul>
+                    <button class="read-toggle" type="button" data-read-toggle hidden aria-pressed="false">
+                        <span class="read-icon" aria-hidden="true">✓</span>
+                        <span data-read-label>Marcar como lido</span>
+                    </button>
+                    <a class="card-link" href="#desenvolvimento-web">Próximo tema <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="topic-card topic-card--coral" id="desenvolvimento-web">
+                    <div class="card-topline"><span class="card-number">02</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                    <p class="card-category">Desenvolvimento web</p>
+                    <h3>As ferramentas por trás de cada tela.</h3>
+                    <p class="card-description">O desenvolvimento web combina diferentes tecnologias para criar experiências na internet.</p>
+                    <h4>A base da web</h4>
+                    <ul>
+                        <li>HTML <span>estrutura</span></li>
+                        <li>CSS <span>estilo</span></li>
+                        <li>JavaScript <span>interação</span></li>
+                    </ul>
+                    <button class="read-toggle" type="button" data-read-toggle hidden aria-pressed="false">
+                        <span class="read-icon" aria-hidden="true">✓</span>
+                        <span data-read-label>Marcar como lido</span>
+                    </button>
+                    <a class="card-link" href="#programacao">Próximo tema <span aria-hidden="true">→</span></a>
+                </article>
+
+                <article class="topic-card topic-card--blue" id="programacao">
+                    <div class="card-topline"><span class="card-number">03</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+                    <p class="card-category">Programação</p>
+                    <h3>Uma linguagem para cada desafio.</h3>
+                    <p class="card-description">Conheça linguagens populares e algumas das ferramentas criadas com elas.</p>
+                    <h4>Ecossistemas populares</h4>
+                    <ul class="language-list">
+                        <li><span>Java</span><span>Spring Boot · APIs</span></li>
+                        <li><span>Python</span><span>Flask · Django</span></li>
+                        <li><span>JavaScript</span><span>React · Node.js</span></li>
+                    </ul>
+                    <button class="read-toggle" type="button" data-read-toggle hidden aria-pressed="false">
+                        <span class="read-icon" aria-hidden="true">✓</span>
+                        <span data-read-label>Marcar como lido</span>
+                    </button>
+                    <a class="card-link" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+                </article>
+            </div>
+            <p class="search-status" data-search-status role="status" aria-live="polite" aria-atomic="true" hidden></p>
+            <p class="empty-state" data-empty-state hidden>Nenhum tema encontrado. Tente buscar por outra palavra.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">T</span><span>tech<span class="brand-light">blog</span></span></a>
+        <p>Curiosidade é o começo de toda descoberta.</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+    </footer>
+</body>
+</html>
